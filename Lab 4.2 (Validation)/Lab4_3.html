@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title>Login Screen</title>
+</head>
+<body>
+        <form action="Lab4_3.php" method="post">
+            <fieldset>
+                <legend><b>DATE OF BIRTH</legend>
+                <table>
+                    <tr>
+                        <!--<td>Email:</td>-->
+                        <td><input type="text" id="day" name="day" placeholder="dd" maxlength="2" size="2"> /
+						<input type="text" id="month" name="month" placeholder="mm" maxlength="2" size="2"> /
+						<input type="text" id="year" name="year" placeholder="yyyy" maxlength="4" size="4"></td>
+                    </tr>
+                    <tr>
+                        <td>
+							</br>
+                            <input type="submit" name="submit" value="Submit"  />
+                        </td>
+                    </tr>
+                </table>
+				<!-- Display error or success messages -->
+				<?php if (!empty($error)): ?>
+					<p class="error"><?php echo $error; ?></p>
+				<?php elseif (!empty($success)): ?>
+					<p class="success"><?php echo $success; ?></p>
+				<?php endif; ?>
+        </fieldset>     
+        </form> 
+</body>
+</html>
