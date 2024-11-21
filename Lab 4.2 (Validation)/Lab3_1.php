@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php elseif (!empty($success)): ?>
             <p class="success"><?php echo $success; ?></p>
         <?php endif; ?>
-        <a href="index.html">Go back</a>
+        <a href="Lab3_1.html">Go back</a>
     </div>
 </body>
 </html>
