@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title>Login Screen</title>
+</head>
+<body>
+        <form action="Lab4_4.php" method="post">
+            <fieldset>
+                <legend><b>GENDER</legend>
+                <table>
+                    <tr>
+                        <!--<td>Email:</td>-->
+                        <td><input type="radio" id="male" name="gender" value="Male"> Male
+							<input type="radio" id="female" name="gender" value="Female"> Female
+							<input type="radio" id="other" name="gender" value="Other"> Other</td>
+                    </tr>
+                    <tr>
+                        <td>
+							</br>
+                            <input type="submit" name="submit" value="Submit"  />
+                        </td>
+                    </tr>
+                </table>
+				<!-- Display error or success messages -->
+				<?php if (!empty($error)): ?>
+					<p class="error"><?php echo $error; ?></p>
+				<?php elseif (!empty($success)): ?>
+					<p class="success"><?php echo $success; ?></p>
+				<?php endif; ?>
+        </fieldset>     
+        </form> 
+</body>
+</html>
