@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>Login Screen</title>
+</head>
+<body>
+        <form action="Lab4_5.php" method="post">
+            <fieldset>
+                <legend><b>DEGREE</legend>
+                <table>
+                    <tr>
+                        <!--<td>Email:</td>-->
+                        <td><input type="checkbox" name="degree[]" value="SSC"> SSC
+                            <input type="checkbox" name="degree[]" value="HSC"> HSC
+                            <input type="checkbox" name="degree[]" value="BSc"> BSc
+                            <input type="checkbox" name="degree[]" value="MSc"> MSc</td>
+                    </tr>
+                    <tr>
+                        <td>
+							</br>
+                            <input type="submit" name="submit" value="Submit"  />
+                        </td>
+                    </tr>
+                </table>
+				<!-- Display error or success messages -->
+				<?php if (!empty($error)): ?>
+					<p class="error"><?php echo $error; ?></p>
+				<?php elseif (!empty($success)): ?>
+					<p class="success"><?php echo $success; ?></p>
+				<?php endif; ?>
+        </fieldset>     
+        </form> 
+</body>
+</html>
