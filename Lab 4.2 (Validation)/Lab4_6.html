@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <title>Login Screen</title>
+</head>
+<body>
+        <form action="Lab4_6.php" method="post">
+            <fieldset>
+                <legend><b>BLOOD GROUP</legend>
+                <table>
+                    <tr>
+                        <!--<td>Email:</td>-->
+                        <td><select name="blood_group" required>
+                            <option value="">Select</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>
+							</br>
+                            <input type="submit" name="submit" value="Submit"  />
+                        </td>
+                    </tr>
+                </table>
+				<!-- Display error or success messages -->
+				<?php if (!empty($error)): ?>
+					<p class="error"><?php echo $error; ?></p>
+				<?php elseif (!empty($success)): ?>
+					<p class="success"><?php echo $success; ?></p>
+				<?php endif; ?>
+        </fieldset>     
+        </form> 
+</body>
+</html>
