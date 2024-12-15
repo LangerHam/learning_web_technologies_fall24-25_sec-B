@@ -39,7 +39,7 @@ if (isset($_POST['change_password']))
     }
     else
     {
-        echo "<p style='color: red;'>Current Password mismatched.</p>"
+        echo "<p style='color: red;'>Current Password mismatched.</p>";
     }    
 }
 ?>
