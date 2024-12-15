@@ -36,6 +36,7 @@ if (isset($_POST['login']))
         {
             $_SESSION['userid'] = $userid;
             $_SESSION['name']= $storedName;
+            $_SESSION['pass']= $storedPassword;
             $_SESSION['user_type'] = trim($userType);
 
             if (trim($userType) === 'Admin') {
