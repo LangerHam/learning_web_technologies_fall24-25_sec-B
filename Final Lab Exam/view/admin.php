@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>Admin Pansel</title>
+    <title>Admin Panel</title>
 
 </head>
 <body>
